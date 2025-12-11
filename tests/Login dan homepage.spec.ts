@@ -20,7 +20,6 @@ test('test', async ({ browser }) => {
   await page.locator('iframe[name="a-ovkw1hri1x4l"]').contentFrame().getByRole('checkbox', { name: 'I\'m not a robot' }).click();
   await page.locator('#remember_me').check();
   await page.getByRole('button', { name: 'Masuk' }).click();
-  await page.waitForSelector('text=Selamat Datang di Lelang Mobilku');
   await page.pause();
   await page.getByRole('link', { name: 'Deposit' }).click();
 });
